@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import LoginForm from "./components/LoginForm/LoginForm";
+import WebsiteNavigation from "./components/WebsiteNavigation";
+import Home from "./components/Home";
+import SignUpForm from "./components/SignUpForm/SignUpForm";
+import SellProperty from "./components/SellProperty/SellProperty";
+import ForSale from "./components/ForSale/ForSale";
+import ToRent from "./components/ToRent/ToRent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WebsiteNavigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/sign-up" element={<SignUpForm />} />
+        <Route path="/sell-property" element={<SellProperty />} />
+        <Route path="/for-sale" element={<ForSale />} />
+        <Route path="/to-rent" element={<ToRent />} />
+      </Routes>
     </div>
   );
 }
