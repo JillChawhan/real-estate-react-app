@@ -7,6 +7,8 @@ import SignUpForm from "./components/SignUpForm/SignUpForm";
 import SellProperty from "./components/SellProperty/SellProperty";
 import ForSale from "./components/ForSale/ForSale";
 import ToRent from "./components/ToRent/ToRent";
+import ContactUs from "./components/ContactUs/ContactUs";
+import ResolveQuery from "./components/ContactUs/ResolveQuery";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/sell-property" element={<SellProperty />} />
         <Route path="/for-sale" element={<ForSale />} />
         <Route path="/to-rent" element={<ToRent />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/resolve-query" element={<ResolveQuery />} />
       </Routes>
     </div>
   );

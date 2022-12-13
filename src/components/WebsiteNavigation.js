@@ -27,6 +27,9 @@ function WebsiteNavigation() {
           <li>
             <Link to={"/to-rent"}>To Rent</Link>
           </li>
+          <li>
+            <Link to={"/contact-us"}>Contact Us</Link>
+          </li>
         </ul>
       </nav>
     </header>
