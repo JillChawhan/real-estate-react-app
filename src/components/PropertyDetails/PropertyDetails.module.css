@@ -1,0 +1,40 @@
+.tableContainer{
+    text-align: left;
+    padding-top: 20rem;
+    padding: 0.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.content{
+    text-align: center;
+}
+
+.data{
+    padding-left: 3 rem;
+}
+
+.heading {
+    color:wheat;
+    font-style: italic;
+}
+
+tr:nth-child(even){
+    background-color: rgba(247, 230, 165, 0.7);
+}
+
+tr:nth-child(odd){
+    background-color: rgba(255, 204, 95, 0.7);
+}
+
+tr,th,td {
+    padding: 0.5rem;
+    font-family: 'arial';
+}
+
+tr td {
+    font-family: 'consolas';
+    font-weight: 550;
+}

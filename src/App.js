@@ -9,13 +9,17 @@ import ForSale from "./components/ForSale/ForSale";
 import ToRent from "./components/ToRent/ToRent";
 import ContactUs from "./components/ContactUs/ContactUs";
 import ResolveQuery from "./components/ContactUs/ResolveQuery";
+import PropertyDetails from "./components/PropertyDetails/PropertyDetails";
+import Properties from "./components/Properties/Properties";
+import video from "./realestatevideo.mp4";
 
 function App() {
   return (
     <div className="App">
       <WebsiteNavigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Properties />} />
+        <Route path="/property/:propertyId" element={<PropertyDetails />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/sign-up" element={<SignUpForm />} />
         <Route path="/sell-property" element={<SellProperty />} />

@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1a63b7;
     padding: 0 10%;
+    background-color: rgba(255,255,255,0.9);
 }
 
 .logo {
@@ -12,6 +12,7 @@
     color: white;
     font-weight: bold;
     font-style: italic;
+    margin-left: 3rem;
 }
 
 .header ul {
@@ -30,10 +31,14 @@
 .header a {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #76b5ed;
+    color: #197cd2;
 }
 
 .header a:hover,
 .header a:active{
-    color: white;
+    color: darkblue;
+}
+
+.left {
+    
 }

@@ -4,34 +4,40 @@ import classes from "./WebsiteNavigation.module.css";
 function WebsiteNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>
-        <h1>Real Estate App</h1>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to={"/"}>
+                <img
+                  src={"https://www.houzeo.com/images/new-logo.svg"}
+                  alt="logo"
+                  className={classes.logo}
+                  width="80%"
+                />
+              </Link>
+            </li>
+            <li>
+              <Link to={"/login"}>Login</Link>
+            </li>
+            <li>
+              <Link to={"/sign-up"}>Sign Up</Link>
+            </li>
+            <li>
+              <Link to={"/sell-property"}>Sell Property</Link>
+            </li>
+            <li>
+              <Link to={"/for-sale"}>For Sale</Link>
+            </li>
+            <li>
+              <Link to={"/to-rent"}>To Rent</Link>
+            </li>
+            <li>
+              <Link to={"/contact-us"}>Contact Us</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/login"}>Login</Link>
-          </li>
-          <li>
-            <Link to={"/sign-up"}>Sign Up</Link>
-          </li>
-          <li>
-            <Link to={"/sell-property"}>Sell Property</Link>
-          </li>
-          <li>
-            <Link to={"/for-sale"}>For Sale</Link>
-          </li>
-          <li>
-            <Link to={"/to-rent"}>To Rent</Link>
-          </li>
-          <li>
-            <Link to={"/contact-us"}>Contact Us</Link>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 }

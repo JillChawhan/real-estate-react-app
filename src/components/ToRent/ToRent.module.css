@@ -1,0 +1,53 @@
+.cardContainer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.heading{
+    color: wheat;
+    font-style: italic;
+}
+
+.link {
+    font-family: 'Lucida Sans';
+}
+
+.card {
+    background-color: rgba(255,253,208,0.7);
+    border-radius: 10px;
+    border: 2px solid grey;
+    box-shadow: 6px 6px 8px 8px rgba(128,128,128,0.6);
+}
+
+
+.image {
+    height: 287px;
+    width: 287px;
+}
+
+.button{
+    background-color: rgba(0,255,0,0.4);
+    border: 0.5px;
+    border-radius: 10px;
+    width: 65px;
+    height: 35px;
+    border: 1px solid black;
+}
+
+.button:hover{
+    background-color: rgba(255,99,71,0.8);
+}
+
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    background-color: rgba(255,0,0,0.4);
+}
