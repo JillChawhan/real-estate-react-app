@@ -38,3 +38,26 @@ tr td {
     font-family: 'consolas';
     font-weight: 550;
 }
+
+.buttonContainer {
+    padding: 1rem;
+}
+
+.button {
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: rgba(255,253,208);
+    color: #5c4033;
+    border: 1px solid #5a400d;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color:#FFBE7C;
+    border:1px solid #7b3f00;
+    letter-spacing: 0.3rem;
+}

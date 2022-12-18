@@ -51,10 +51,12 @@
     border: 1px solid#7b3f00;
     border-radius: 4px;
     font-weight: bold;
+    transition: 0.3s;
   }
   
   .actions button:hover,
   .actions button:active {
     background-color:#FFBE7C;
     border: 1px solid#7b3f00;
+    letter-spacing: 0.3rem;
   }

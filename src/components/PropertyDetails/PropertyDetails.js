@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { Link, useParams } from "react-router-dom";
 import classes from "./PropertyDetails.module.css";
 
 const PropertyDetails = () => {
@@ -75,6 +76,11 @@ const PropertyDetails = () => {
             </tr>
           </thead>
         </table>
+        <div className={classes.buttonContainer}>
+          <Link>
+            <Button className={classes.button}>Make An Offer!</Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

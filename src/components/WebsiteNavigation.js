@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import classes from "./WebsiteNavigation.module.css";
+import { logOut } from "./CheckLogin";
 
 function WebsiteNavigation() {
+  function handleClick() {
+    logOut();
+    window.location.reload();
+  }
   return (
     <header className={classes.header}>
       <div>
@@ -34,6 +39,16 @@ function WebsiteNavigation() {
             </li>
             <li>
               <Link to={"/contact-us"}>Contact Us</Link>
+            </li>
+            <li>
+              <Link
+                to={"/login"}
+                onClick={() => {
+                  handleClick();
+                }}
+              >
+                LogOut
+              </Link>
             </li>
           </ul>
         </nav>

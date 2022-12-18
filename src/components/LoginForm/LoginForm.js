@@ -22,6 +22,8 @@ function LoginForm() {
     e.preventDefault();
     const account = users.find((user) => user.emailId === email);
     if (account && account.password === password) {
+      localStorage.setItem("email", email);
+      localStorage.setItem("password", password);
       alert("Login Successful!");
       navigate("/");
     } else {
